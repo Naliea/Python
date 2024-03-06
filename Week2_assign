@@ -1,34 +1,17 @@
-#A list that computes the sum of the items
-list_integers=input("Write a list of integers:")
-list_numbers=[sum(int(n) for n in list_integers.split())]
-print(list_numbers)
-
-#A tuple that prints the value of each item
-tuple_books =("Gay Girl Good God","Upon waking","Quest for love","Passion and Purity","Chaos with purpose")
-for n in tuple_books:
-  print(n)
-
-#Dictionary containing user's information
-Name = input("What is your name:")
-Age = input("What is your age:")
-Favourite_color = input("What is your favourite color:")
-user_data = {
-  'Name':Name,
-  'Age':Age,
-  'Favourite_color':Favourite_color,
-}
-print(user_data)
-
-#Creating sets
-input_set_One = input("Enter a set of integers:")
-set_One = set(map(int,input_set_One.split()))
-input_set_Two = input("Enter another set of integers:")
-set_Two = set(map(int,input_set_Two.split()))
-New_set = set_One.intersection(set_Two)
-print("Common elements in the sets:",New_set)
-
-#Creating a list that as odd no. of characters using list copmmrehesion
-list_words = ['Peace','Chiri','Lydia','Marianne','Maji']
-new_List = [
-word for word in list_words 
-  if len(word)%2 != 0]
+#Create an empty list called my_list.
+my_list = []
+#Append the following elements to my_list: 10, 20, 30, 40.
+my_list.append(10)
+my_list.append(20)
+my_list.append(30)
+my_list.append(40)
+#Insert the value 15 at the second position in the list.
+my_list.insert(1,15)
+#extension of list
+my_list.extend([50,60,70])
+#Remove the last element from my_list
+my_list.pop()
+#Sort list in ascending order
+my_list.sort()
+#print the value of 30 in my list
+print("The value of 30 in my_list is ",my_list.index(30))  
